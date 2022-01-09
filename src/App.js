@@ -1,9 +1,13 @@
 import "./css/style.css";
+import Header from './Header.js';
+import Footer from './Footer.js';
 
 function App() {
   return (
     <div className="App">
-      <header></header>
+      <Header />
+
+      <Footer />
     </div>
   );
 }
