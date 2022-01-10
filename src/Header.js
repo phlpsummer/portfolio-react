@@ -1,17 +1,19 @@
-
+import {NavLink} from 'react-router-dom';
 
 function Header(){
 
     return (
         <header>
             <h1>
-                Saturday
+                <NavLink exact to="/">
+                    Saturday
+                </NavLink>
             </h1>
 
             <ul id="gnb">
-                <li>Gallery</li>
-                <li>Media</li>
-                <li>Board</li>
+                <li><NavLink exact to="/gallery">Gallery</NavLink></li>
+                <li><NavLink exact to="/media">Media</NavLink></li>
+                <li><NavLink exact to="/board">Board</NavLink></li>
             </ul>
         </header>
     )
