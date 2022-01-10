@@ -1,17 +1,23 @@
 import "./css/style.css";
-import {Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import Header from './Header.js';
 import Footer from './Footer.js';
+import Main from './components/Main.js';
+import Gallery from './components/Gallery.js';
+import Media from './components/Media.js';
+import Board from './components/Board.js';
 
 function App() {
   return (
     <div className="App">
       <Header />
 
-      <Route exact path="/" component={Main}></Route>
-      <Route exact path="/gallery" component={Gallery}></Route>
-      <Route exact path="/media" component={Media}></Route>
-      <Route exact path="/board" component={Board}></Route>
+      <Routes>
+        <Route path="/gallery" element={<Gallery />}></Route>
+        <Route path="/media" element={<Media />}></Route>
+        <Route path="/board" element={<Board />}></Route>
+        <Route exact path="/" element={<Main />}></Route>
+      </Routes>
 
       <Footer />
     </div>
