@@ -1,5 +1,5 @@
-
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const baseURL = "https://www.flickr.com/services/rest/?";
 const method = "flickr.people.getPhotos";
@@ -11,6 +11,10 @@ const url = `${baseURL}method=${method}&api_key=${key}&per_page=${count}&user_id
 function Gallery(){
     let [pics,setPics] = useState([]);
 
+    useEffect(()=>{
+        getFlickr(url);
+    },[]);
+
     return (
         <main className="content gallery">
             <h2>Gallery</h2>
@@ -18,10 +22,18 @@ function Gallery(){
             <section>
                 {
                     pics.map((pic,index)=>{
-                        let imgSrc = `https://live.staticflickr.com/{server-id}/{id}_{secret}_{size-suffix}.jpg`;
+                        let imgSrc = `https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`;
                         return (
-                            <article>
-
+                            <article key={index}>
+                                <div className="inner">
+                                    <div className="pic">
+                                        <img src={imgSrc} />
+                                    </div>
+                                    <div className="con">
+                                        <p>{pic.title}</p>
+                                        <span>{pic.owner}</span>
+                                    </div>
+                                </div>
                             </article>
                         )
                     })
@@ -29,8 +41,16 @@ function Gallery(){
             </section>
         </main>
     )
-
-
-
+    
+    async function getFlickr(url){
+        await axios.get(url)
+        .then(item=>{
+            const data = item.data.photos.photo;
+            setPics(data);
+        })
+        .catch(err=>{
+            console.error(err);
+        })
+    }
 }
 export default Gallery;
