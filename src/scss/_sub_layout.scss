@@ -1,0 +1,24 @@
+.content {
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        padding-top: 150px; padding-bottom: 100px;
+        position: relative;
+
+        h2 {
+            font: 700 74px/1 'Catamaran'; color: #151515;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media screen and (max-width:1179px) {
+    .content {
+        .inner {
+            width: 100%;
+            padding: 50px 20px;
+
+            h2 { font-size: calc(100vw*(80/1400));}
+        }
+    }
+}

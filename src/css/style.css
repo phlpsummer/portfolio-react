@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arsenal:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +14,9 @@ a {
 header {
   width: 100%;
   height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
   background: transparent;
   display: flex;
   justify-content: space-between;
@@ -29,7 +32,7 @@ header {
       display: inline-block;
       position: relative;
       margin: 12px 40px;
-      font: 700 18px/1 'Arsenal';
+      font: 700 18px/1 'Catamaran';
       color: #111;
       transition: 0.5s; }
       header #gnb li:hover {
@@ -55,6 +58,154 @@ footer {
   color: #fff;
   letter-spacing: 2px; }
 
+.content .inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  position: relative; }
+  .content .inner h2 {
+    font: 700 74px/1 'Catamaran';
+    color: #151515;
+    margin-bottom: 60px; }
+
+@media screen and (max-width: 1179px) {
+  .content .inner {
+    width: 100%;
+    padding: 50px 20px; }
+    .content .inner h2 {
+      font-size: calc(100vw*(80/1400)); } }
+.gallery .inner .searchBox {
+  width: 100%;
+  position: relative;
+  font-size: 0;
+  margin-bottom: 80px; }
+  .gallery .inner .searchBox .searchBar {
+    width: 250px;
+    height: 36px;
+    border: 4px solid #151515;
+    background: #151515;
+    font: 400 15px/1 'Noto Sans KR';
+    color: #ddd;
+    padding: 12px; }
+    .gallery .inner .searchBox .searchBar::placeholder {
+      font: 300 15px/1 'Noto Sans KR';
+      color: #aaa; }
+  .gallery .inner .searchBox .btnSearch {
+    width: 60px;
+    height: 36px;
+    border: 4px solid #151515;
+    border-left: 1px solid #444;
+    background: #151515;
+    font: 400 15px/1 'Noto Sans KR';
+    color: #d6d064;
+    letter-spacing: 1px;
+    cursor: pointer; }
+.gallery .inner #wrap {
+  width: 100%;
+  position: relative; }
+  .gallery .inner #wrap::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .gallery .inner #wrap article {
+    width: calc(100% / 4);
+    padding: 12px;
+    float: left; }
+    .gallery .inner #wrap article .panel {
+      width: 100%;
+      background: #fff;
+      box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3); }
+      .gallery .inner #wrap article .panel .txt {
+        width: 100%;
+        padding: 15px; }
+        .gallery .inner #wrap article .panel .txt p {
+          font: 700 20px/1.4 'Catamaran';
+          color: #151515;
+          margin-bottom: 10px; }
+        .gallery .inner #wrap article .panel .txt span {
+          font: 300 14px/1.4 'Catamaran';
+          color: #151515; }
+      .gallery .inner #wrap article .panel a {
+        display: block;
+        width: 100%;
+        font-size: 0;
+        margin-top: 10px; }
+        .gallery .inner #wrap article .panel a img {
+          width: 100%;
+          object-fit: contain; }
+.gallery aside {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 6vw 12vw;
+  z-index: 9;
+  display: none;
+  opacity: 0; }
+  .gallery aside.on {
+    display: block;
+    opacity: 1; }
+  .gallery aside img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center; }
+  .gallery aside .btnClose {
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 0;
+    text-indent: -999px;
+    cursor: pointer; }
+    .gallery aside .btnClose::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: top left;
+      transform: rotate(45deg);
+      margin-left: 25px; }
+    .gallery aside .btnClose::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform-origin: top right;
+      transform: rotate(-45deg);
+      margin-left: -25px; }
+
+@media screen and (max-width: 1179px) {
+  .gallery .inner #wrap article {
+    width: calc(100% / 3); } }
+@media screen and (max-width: 649px) {
+  .gallery .inner #wrap article {
+    width: calc(100% / 2); } }
+@media screen and (max-width: 539px) {
+  .gallery .inner .searchBox .searchBar {
+    width: 180px;
+    font-size: 14px; }
+  .gallery .inner .searchBox .btnSearch {
+    width: 70px;
+    font-size: 14px; }
+  .gallery .inner #wrap article {
+    width: calc(100% / 2); } }
+@media screen and (max-width: 429px) {
+  .gallery .inner #wrap article {
+    width: calc(100% / 1); } }
 body {
   width: 100%;
   background: #f2edd7; }

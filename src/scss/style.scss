@@ -1,9 +1,11 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arsenal:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
 @import "reset";
 @import "header";
 @import "footer";
+@import "sub_layout";
+@import "gallery";
 
 body { width: 100%; background: #f2edd7;}
 
@@ -16,5 +18,5 @@ body { width: 100%; background: #f2edd7;}
 //포인트3 연두: #d6d064
 
 // font-family: 'Abril Fatface', cursive;
-// font-family: 'Arsenal', sans-serif;
+// font-family: 'Catamaran', sans-serif;
 // font-family: 'Noto Sans KR', sans-serif;

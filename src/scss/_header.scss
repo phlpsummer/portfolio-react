@@ -1,5 +1,7 @@
 header {
     width: 100%; height: 90px;
+    position: absolute;
+    top: 0; left: 0;
     background: transparent;
     display: flex;
     justify-content: space-between; align-items: center;
@@ -17,7 +19,7 @@ header {
             display: inline-block;
             position: relative;
             margin: 12px 40px;
-            font: 700 18px/1 'Arsenal'; color: #111;
+            font: 700 18px/1 'Catamaran'; color: #111;
             transition: 0.5s;
 
             &:hover { color: #e841dc;}

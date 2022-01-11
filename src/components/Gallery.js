@@ -17,28 +17,38 @@ function Gallery(){
 
     return (
         <main className="content gallery">
-            <h2>Gallery</h2>
+            <div className="inner">
+                <h2>Gallery</h2>
+                
+                <section className="searchBox">
+                    <input type="text" className="searchBar" placeholder="검색어를 입력해주세요." />
+                    <button className="btnSearch">검색</button>
+                </section>
+                
+                <section id="wrap">
+                    {
+                        pics.map((pic,index)=>{
+                            let imgSrc = `https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`;
+                            return (
+                                <article key={index}>
+                                    <div className="panel">
+                                        <div className="txt">
+                                            <p>{pic.title}</p>
+                                            <span>{pic.owner}</span>
+                                        </div>
+                                        <a href="#" className="pic"><img src={imgSrc} /></a>
+                                    </div>
+                                </article>
+                            )
+                        })
+                    }
+                </section>
+            </div>
 
-            <section>
-                {
-                    pics.map((pic,index)=>{
-                        let imgSrc = `https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`;
-                        return (
-                            <article key={index}>
-                                <div className="inner">
-                                    <div className="pic">
-                                        <img src={imgSrc} />
-                                    </div>
-                                    <div className="con">
-                                        <p>{pic.title}</p>
-                                        <span>{pic.owner}</span>
-                                    </div>
-                                </div>
-                            </article>
-                        )
-                    })
-                }
-            </section>
+            <aside>
+                <img src="#" />
+                <span className="btnClose">close</span>
+            </aside>
         </main>
     )
     
