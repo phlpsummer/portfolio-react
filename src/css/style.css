@@ -21,7 +21,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 4vw; }
+  padding: 0px 4vw;
+  z-index: 5; }
   header h1 {
     font: 26px/1 'Abril Fatface';
     color: #f05037;
@@ -58,23 +59,50 @@ footer {
   color: #fff;
   letter-spacing: 2px; }
 
+.content .titBanner {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  background-color: #ffcdd2; }
+  .content .titBanner h2 {
+    font: 700 60px/1 'Catamaran';
+    color: #151515;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; }
+  .content .titBanner img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center 30%;
+    opacity: 0.5;
+    filter: saturate(0.1) brightness(1.5) contrast(2); }
+  .content .titBanner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffcdd2;
+    opacity: 0.5; }
 .content .inner {
   width: 1180px;
   margin: 0 auto;
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 100px;
   position: relative; }
-  .content .inner h2 {
-    font: 700 74px/1 'Catamaran';
-    color: #151515;
-    margin-bottom: 60px; }
 
 @media screen and (max-width: 1179px) {
   .content .inner {
     width: 100%;
-    padding: 50px 20px; }
-    .content .inner h2 {
-      font-size: calc(100vw*(80/1400)); } }
+    padding: 50px 20px; } }
 .gallery .inner .searchBox {
   width: 100%;
   position: relative;

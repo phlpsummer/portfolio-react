@@ -17,9 +17,12 @@ function Gallery(){
 
     return (
         <main className="content gallery">
-            <div className="inner">
+            <div className="titBanner" >
                 <h2>Gallery</h2>
-                
+                <img src={process.env.PUBLIC_URL + '/img/sub_gallery.jpg'} />
+            </div>
+
+            <div className="inner">
                 <section className="searchBox">
                     <input type="text" className="searchBar" placeholder="검색어를 입력해주세요." />
                     <button className="btnSearch">검색</button>
