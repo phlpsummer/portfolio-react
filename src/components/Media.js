@@ -1,4 +1,18 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+const playlist = "PL-4RqvSks9qWoKHa8ojDRl_egHrJqsMME";
+const key = `AIzaSyAMoGKvrd6wFxpLb2M8fXI83hwwuZjv7is`;
+const count = 5;
+const url = `https://www.googleapis.com/youtube/v3/playlistItems?key=${key}&part=snippet&playlistId=${playlist}&maxResults=${count}`;
+
 function Media(){
+    let [vids,setVids] = useState([]);
+
+    useEffect(()=>{
+        getYoutube(url);
+    },[]);
+
     return (
         <main className="content media">
             <div className="titBanner" >
@@ -7,9 +21,38 @@ function Media(){
             </div>
 
             <div className="inner">
+                <section>
+                    {
+                        vids.map((vid,index)=>{
 
+                            return (
+                                <article key={index}>
+                                    <a href="#">
+                                        <img src="#" />
+                                    </a>
+                                    <div className="con">
+                                        <div className="title"></div>
+                                        <p></p>
+                                        <span></span>
+                                    </div>
+                                </article>
+                            )
+                        })
+                    }
+                </section>
             </div>
         </main>
     )
+
+    function getYoutube(url){
+        axios.get(url)
+        .then(item=>{
+            const data = item.data.items;
+            setVids(data);
+        })
+        .catch(err=>{
+            console.error(err);
+        })
+    }
 }
 export default Media;
