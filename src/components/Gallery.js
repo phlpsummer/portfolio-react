@@ -10,6 +10,7 @@ const url = `${baseURL}method=${method}&api_key=${key}&per_page=${count}&user_id
 
 function Gallery(){
     let [pics,setPics] = useState([]);
+    let [done,setDone] = useState(false);
 
     useEffect(()=>{
         getFlickr(url);
@@ -27,25 +28,31 @@ function Gallery(){
                     <input type="text" className="searchBar" placeholder="검색어를 입력해주세요." />
                     <button className="btnSearch">검색</button>
                 </section>
-                
-                <section id="wrap">
-                    {
-                        pics.map((pic,index)=>{
-                            let imgSrc = `https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`;
-                            return (
-                                <article key={index}>
-                                    <div className="panel">
-                                        <div className="txt">
-                                            <p>{pic.title}</p>
-                                            <span>{pic.owner}</span>
+
+                {
+                    (done) ?
+                    <section id="wrap">
+                        {
+                            pics.map((pic,index)=>{
+                                let imgSrc = `https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`;
+                                return (
+                                    <article key={index} className="item">
+                                        <div className="panel">
+                                            <div className="txt">
+                                                <p>{pic.title}</p>
+                                                <span>{pic.owner}</span>
+                                            </div>
+                                            <a href="#" className="pic"><img src={imgSrc} /></a>
                                         </div>
-                                        <a href="#" className="pic"><img src={imgSrc} /></a>
-                                    </div>
-                                </article>
-                            )
-                        })
-                    }
-                </section>
+                                    </article>
+                                )
+                            })
+                        }
+                    </section>
+                    : <p>로딩중</p>
+                }
+                
+
             </div>
 
             <aside>
@@ -64,6 +71,16 @@ function Gallery(){
         .catch(err=>{
             console.error(err);
         })
+
+        setDone(true);
     }
+
+    // function isotopeLayout(){
+    //     new Isotope("#wrap",{
+    //         itemSelector: ".item",
+    //         columnWidth: ".item",
+    //         transitionDuration: "0.5s"
+    //     });
+    // }
 }
 export default Gallery;
