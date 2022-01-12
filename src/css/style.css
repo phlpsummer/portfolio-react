@@ -164,6 +164,8 @@ footer {
         .gallery .inner #wrap article .panel a img {
           width: 100%;
           object-fit: contain; }
+.gallery .inner .loading {
+  width: 250px; }
 .gallery aside {
   width: 100%;
   height: 100vh;

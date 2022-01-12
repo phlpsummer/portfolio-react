@@ -49,10 +49,8 @@ function Gallery(){
                             })
                         }
                     </section>
-                    : <p>로딩중</p>
+                    : <img src={process.env.PUBLIC_URL + '/img/loading.gif'} className="loading"/>
                 }
-                
-
             </div>
 
             <aside>
@@ -73,6 +71,7 @@ function Gallery(){
         })
 
         setDone(true);
+        // isotopeLayout();
     }
 
     // function isotopeLayout(){
