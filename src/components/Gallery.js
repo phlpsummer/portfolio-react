@@ -8,6 +8,10 @@ const count = 10;
 const user = "194176696@N08";
 const url = `${baseURL}method=${method}&api_key=${key}&per_page=${count}&user_id=${user}&format=json&nojsoncallback=1&privacy_filter=1`;
 
+// const searchBar = document.querySelector(".searchBar");
+// const btnSearch = document.querySelector(".btnSearch");
+// const pop = document.querySelector("aside");
+
 function Gallery(){
     let [pics,setPics] = useState([]);
     let [done,setDone] = useState(false);
@@ -34,7 +38,9 @@ function Gallery(){
                     <section id="wrap">
                         {
                             pics.map((pic,index)=>{
-                                let imgSrc = `https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`;
+                                let thumbSrc = `https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`;
+                                let imgSrc = `https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_b.jpg`;
+
                                 return (
                                     <article key={index} className="item">
                                         <div className="panel">
@@ -42,7 +48,9 @@ function Gallery(){
                                                 <p>{pic.title}</p>
                                                 <span>{pic.owner}</span>
                                             </div>
-                                            <a href="#" className="pic"><img src={imgSrc} /></a>
+                                            <a href={imgSrc} className="pic">
+                                                <img src={thumbSrc} />
+                                            </a>
                                         </div>
                                     </article>
                                 )
@@ -54,7 +62,7 @@ function Gallery(){
             </div>
 
             <aside>
-                <img src="#" />
+                <img src="#" id="popImg"/>
                 <span className="btnClose">close</span>
             </aside>
         </main>

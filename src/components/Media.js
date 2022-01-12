@@ -1,7 +1,14 @@
 function Media(){
     return (
         <main className="content media">
-            <h2>Media</h2>
+            <div className="titBanner" >
+                <h2>Media</h2>
+                <img src={process.env.PUBLIC_URL + '/img/sub_media.jpg'} />
+            </div>
+
+            <div className="inner">
+
+            </div>
         </main>
     )
 }

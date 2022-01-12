@@ -1,7 +1,14 @@
 function Board(){
     return (
         <main className="content board">
-            <h2>Board</h2>
+            <div className="titBanner" >
+                <h2>Board</h2>
+                <img src={process.env.PUBLIC_URL + '/img/sub_board.jpg'} />
+            </div>
+
+            <div className="inner">
+
+            </div>
         </main>
     )
 }
