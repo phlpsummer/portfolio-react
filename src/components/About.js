@@ -1,8 +1,8 @@
-function Board(){
+function About(){
     return (
-        <main className="content board">
+        <main className="content about">
             <div className="titBanner" >
-                <h2>Board</h2>
+                <h2>About</h2>
                 <img src={process.env.PUBLIC_URL + '/img/sub_board.jpg'} />
             </div>
 
@@ -12,4 +12,4 @@ function Board(){
         </main>
     )
 }
-export default Board;
+export default About;
