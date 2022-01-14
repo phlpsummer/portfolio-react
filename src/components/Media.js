@@ -24,16 +24,21 @@ function Media(){
                 <section>
                     {
                         vids.map((vid,index)=>{
+                            let vidUrl = `${vid.snippet.resourceId.videoId}`;
+                            let vidThumb = `${vid.snippet.thumbnails.standard.url}`;
+                            let vidTitle = vid.snippet.title;
+                            let vidDesc = vid.snippet.description;
+                            let vidDate = vid.snippet.publishedAt;
 
                             return (
                                 <article key={index}>
-                                    <a href="#">
-                                        <img src="#" />
+                                    <a href={vidUrl}>
+                                        <img src={vidThumb} />
                                     </a>
                                     <div className="con">
-                                        <div className="title"></div>
-                                        <p></p>
-                                        <span></span>
+                                        <div className="title">{vidTitle}</div>
+                                        <p>{vidDesc}</p>
+                                        <span>{vidDate}</span>
                                     </div>
                                 </article>
                             )
@@ -47,6 +52,7 @@ function Media(){
     function getYoutube(url){
         axios.get(url)
         .then(item=>{
+            console.log(item.data.items);
             const data = item.data.items;
             setVids(data);
         })
