@@ -2,7 +2,6 @@
   "name": "react_basic",
   "version": "0.1.0",
   "private": true,
-  "homepages": "https://phlpsummer.github.io/portfolio-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
@@ -22,6 +21,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://phlpsummer.github.io/portfolio-react/",
   "eslintConfig": {
     "extends": [
       "react-app",
