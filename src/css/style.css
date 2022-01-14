@@ -238,6 +238,18 @@ footer {
 @media screen and (max-width: 429px) {
   .gallery .inner #wrap article {
     width: calc(100% / 1); } }
+.media .inner section::after {
+  content: '';
+  display: block;
+  clear: both; }
+.media .inner section article:not(:first-child) {
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden; }
+
 body {
   width: 100%;
   background: #f2edd7; }

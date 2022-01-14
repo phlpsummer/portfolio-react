@@ -1,0 +1,15 @@
+.media {
+    .inner {
+        section {
+            &::after { content: ''; display: block; clear: both;}
+
+            article:not(:first-child) {
+                width: 32%;
+                float: left;
+                margin-right: 2%; margin-bottom: 40px;
+                position: relative;
+                overflow: hidden;
+            }
+        }
+    }
+}
