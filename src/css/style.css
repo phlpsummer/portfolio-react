@@ -249,6 +249,77 @@ footer {
   margin-bottom: 40px;
   position: relative;
   overflow: hidden; }
+  .media .inner section article:not(:first-child) a {
+    display: block;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background: #000; }
+    .media .inner section article:not(:first-child) a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s; }
+  .media .inner section article:not(:first-child) .con {
+    width: 100%;
+    height: 144px;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.5s; }
+    .media .inner section article:not(:first-child) .con .title {
+      font: 700 15px/1 'Catamaran','Noto Sans KR';
+      color: #fff;
+      margin-bottom: 15px; }
+    .media .inner section article:not(:first-child) .con p {
+      font: 400 12px/1.2 'Catamaran','Noto Sans KR';
+      color: #ccc; }
+    .media .inner section article:not(:first-child) .con span {
+      font: 400 11px/1.2 'Catamaran';
+      color: #d6d064;
+      position: absolute;
+      bottom: 15px;
+      left: 20px; }
+  .media .inner section article:not(:first-child):hover a img {
+    filter: grayscale(1); }
+  .media .inner section article:not(:first-child):hover .con {
+    top: 40%; }
+  .media .inner section article:not(:first-child):nth-of-type(3n+4) {
+    margin-right: 0%; }
+.media .inner section article:first-child {
+  width: 100%;
+  float: left;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between; }
+  .media .inner section article:first-child a {
+    width: 50%;
+    height: 360px;
+    overflow: hidden; }
+    .media .inner section article:first-child a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.6); }
+  .media .inner section article:first-child .con {
+    width: 45%;
+    height: 360px;
+    position: relative; }
+    .media .inner section article:first-child .con .title {
+      font: 700 32px/1.4 'Catamaran','Noto Sans KR';
+      color: #222;
+      margin-bottom: 30px; }
+    .media .inner section article:first-child .con p {
+      font: 400 18px/1.6 'Catamaran','Noto Sans KR';
+      color: #333; }
+    .media .inner section article:first-child .con span {
+      font: 500 16px/1.7 'Catamaran','Noto Sans KR';
+      color: #e841dc;
+      position: absolute;
+      left: 0;
+      bottom: 0; }
 
 body {
   width: 100%;
