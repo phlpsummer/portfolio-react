@@ -52,7 +52,7 @@ function About(){
                         <article>
                             <div className="txt">
                                 <span>SPIRIT :<br/>ALIGNED ON ONE VISION</span>
-                                <h3>ONE TEAM,<br/>ONE DREAM</h3>
+                                <h4>ONE TEAM,<br/>ONE DREAM</h4>
                                 <div className="subtitle">공동의 목표를 향한<br/>팀워크</div>
                                 <div className="arrow"></div>
                                 <p>우리의 업은 열정을 기반으로 합니다. 회사는 이 열정을 바탕으로 비전에 동의하고 이를 이루기 위해 모인 사람들이 함께 노력하는 공동체입니다. 나와 다른 생각과 문화를 가진 동료를 존중하는 유연한 소통으로 문제를 해결하고 충돌을 조절하는 과정에서 우리만의 특별한 결과물이 만들어 질 것입니다.</p>
@@ -64,7 +64,7 @@ function About(){
                     <ul className="divi_tree">
                         <li>
                             <div className="ceo">
-                                <p>RECORD-b 대표</p>
+                                <p>Saturday 대표</p>
                                 <span>김선형</span>
                             </div>
                         </li>
