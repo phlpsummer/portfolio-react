@@ -84,12 +84,12 @@ footer {
         width: 100%;
         height: 100%;
         background: rgba(255, 255, 255, 0.6);
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+        box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.25);
         position: relative; }
         #visual section article .inner .pic {
           width: 100%;
           height: 100%; }
-          #visual section article .inner .pic img {
+          #visual section article .inner .pic video {
             width: 100%;
             height: 100%;
             object-fit: cover; }
@@ -101,7 +101,7 @@ footer {
             position: absolute;
             top: 0;
             left: 0;
-            opacity: 0.3;
+            opacity: 0.1;
             background: #ffcdd2; }
         #visual section article .inner h2 {
           position: absolute;
@@ -113,7 +113,7 @@ footer {
           text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
   #visual .btnPrev {
     display: inline-block;
-    font: 20px/1 'Abril Fatface';
+    font: 700 18px/1 'Catamaran';
     color: #d6d064;
     letter-spacing: 1px;
     position: absolute;
@@ -122,11 +122,11 @@ footer {
     transform: translateY(-50%) rotate(90deg);
     cursor: pointer;
     background: #e841dc;
-    padding: 2px 4px;
+    padding: 3px 5px;
     box-shadow: 6px 4px 0px #cb90ed; }
   #visual .btnNext {
     display: inline-block;
-    font: 20px/1 'Abril Fatface';
+    font: 700 18px/1 'Catamaran';
     color: #d6d064;
     letter-spacing: 1px;
     position: absolute;
@@ -135,7 +135,7 @@ footer {
     transform: translateY(-50%) rotate(90deg);
     cursor: pointer;
     background: #e841dc;
-    padding: 2px 4px;
+    padding: 3px 5px;
     box-shadow: 6px 4px 0px #cb90ed; }
 
 .content {

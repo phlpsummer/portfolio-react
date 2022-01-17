@@ -13,19 +13,19 @@
             .inner {
                 width: 100%; height: 100%;
                 background: rgba(255,255,255,.6);
-                box-shadow: 10px 10px 20px rgba($color: #000, $alpha: 0.05);
+                box-shadow: 25px 25px 30px rgba($color: #000, $alpha: 0.25);
                 position: relative;
 
                 .pic {
                     width: 100%; height: 100%;
             
-                    img{ width: 100%; height: 100%; object-fit: cover;}
+                    video { width: 100%; height: 100%; object-fit: cover;}
 
                     &::after {
                         content: ''; display: block;
                         width: 100%; height: 100%;
                         position: absolute; top: 0; left: 0;
-                        opacity: 0.3;
+                        opacity: 0.1;
                         background: #ffcdd2;
                     }
                 }
@@ -42,22 +42,22 @@
 
     .btnPrev {
         display: inline-block;
-        font: 20px/1 'Abril Fatface'; color: #d6d064; letter-spacing: 1px;
+        font: 700 18px/1 'Catamaran'; color: #d6d064; letter-spacing: 1px;
         position: absolute; top: 50%; left: 5%;
         transform: translateY(-50%) rotate(90deg);
         cursor: pointer;
         background: #e841dc;
-        padding: 2px 4px;
+        padding: 3px 5px;
         box-shadow: 6px 4px 0px rgba($color: #cb90ed, $alpha: 1.0);
     }
     .btnNext {
         display: inline-block;
-        font: 20px/1 'Abril Fatface'; color: #d6d064; letter-spacing: 1px;
+        font: 700 18px/1 'Catamaran'; color: #d6d064; letter-spacing: 1px;
         position: absolute; top: 50%; right: 5%;
         transform: translateY(-50%) rotate(90deg);
         cursor: pointer;
         background: #e841dc;
-        padding: 2px 4px;
+        padding: 3px 5px;
         box-shadow: 6px 4px 0px rgba($color: #cb90ed, $alpha: 1.0);
     }
 }
