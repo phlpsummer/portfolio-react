@@ -59,62 +59,84 @@ footer {
   color: #fff;
   letter-spacing: 2px; }
 
-#visual section {
-  width: 300px;
-  height: 500px;
-  position: absolute;
-  top: 150%;
-  left: 50%;
-  margin-top: -250px;
-  margin-left: -150px;
-  transition: 1s; }
-  #visual section article {
-    width: 100%;
-    height: 100%;
+#visual {
+  width: 100%;
+  height: 100vh;
+  background: #ffcdd2;
+  position: relative;
+  overflow: hidden; }
+  #visual section {
+    width: 78vw;
+    height: 72vh;
     position: absolute;
-    top: 0px;
-    left: 0px; }
-    #visual section article .inner {
+    top: 150%;
+    left: 50%;
+    margin-top: calc(40vh - 36vh);
+    margin-left: -39vw;
+    transition: 1s; }
+    #visual section article {
       width: 100%;
       height: 100%;
-      background: rgba(255, 255, 255, 0.6);
-      border-radius: 20px;
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      flex-wrap: wrap; }
-      #visual section article .inner .pic {
-        width: 200px;
-        height: 200px;
-        overflow: hidden;
-        border-radius: 50%;
-        margin-bottom: 30px; }
-        #visual section article .inner .pic img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
-      #visual section article .inner h2 {
-        font: 24px/1 "arial";
-        color: #777;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
+      #visual section article .inner {
         width: 100%;
-        text-align: center; }
-#visual .btnPrev {
-  font: bold 16px/1 'arial';
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-300px, -50%);
-  cursor: pointer; }
-#visual .btnNext {
-  font: bold 16px/1 'arial';
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(300px, -50%);
-  cursor: pointer; }
+        height: 100%;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+        position: relative; }
+        #visual section article .inner .pic {
+          width: 100%;
+          height: 100%; }
+          #visual section article .inner .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+          #visual section article .inner .pic::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+            background: #ffcdd2; }
+        #visual section article .inner h2 {
+          position: absolute;
+          bottom: 60px;
+          left: 80px;
+          font: 300 100px/1 'Catamaran';
+          color: #fff;
+          letter-spacing: 1px;
+          text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); }
+  #visual .btnPrev {
+    display: inline-block;
+    font: 20px/1 'Abril Fatface';
+    color: #d6d064;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%) rotate(90deg);
+    cursor: pointer;
+    background: #e841dc;
+    padding: 2px 4px;
+    box-shadow: 6px 4px 0px #cb90ed; }
+  #visual .btnNext {
+    display: inline-block;
+    font: 20px/1 'Abril Fatface';
+    color: #d6d064;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%) rotate(90deg);
+    cursor: pointer;
+    background: #e841dc;
+    padding: 2px 4px;
+    box-shadow: 6px 4px 0px #cb90ed; }
 
 .content {
   min-height: 100vh; }
@@ -589,9 +611,5 @@ footer {
 body {
   width: 100%;
   background: #f2edd7; }
-
-#visual {
-  width: 100%;
-  height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */

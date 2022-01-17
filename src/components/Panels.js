@@ -11,7 +11,7 @@ function Panels(){
         <>
             {
                 names.map((name,index)=>{
-                    let style = {transform: `rotate(${deg*index}deg) translateY(-100vh)`}
+                    let style = {transform: `rotate(${deg*index}deg) translateY(-140vh)`}
                     let imgSrc = `${path}/img/${name}.jpg`;
                     return (
                         <article key={index} style={style}>
