@@ -5,12 +5,12 @@ function Btns(props){
 
     function plus(){
         setNum(++num);
-        props.frame.current.style.transform = `rotate(${45*num}deg)`;
+        props.frame.current.style.transform = `rotate(${90*num}deg)`;
     }
 
     function minus(){
         setNum(--num);
-        props.frame.current.style.transform = `rotate(${45*num}deg)`;
+        props.frame.current.style.transform = `rotate(${90*num}deg)`;
     }
 
     return (
