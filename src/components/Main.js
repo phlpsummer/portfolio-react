@@ -10,6 +10,11 @@ function Main(){
                 <Panels />
             </section>
 
+            <div className="deco">
+                <p>I wanna go to</p>
+                <span>(favorite.)</span>
+            </div>
+
             <Btns frame={frame} />
         </figure>
     )

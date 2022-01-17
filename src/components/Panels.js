@@ -11,7 +11,7 @@ function Panels(){
         <>
             {
                 names.map((name,index)=>{
-                    let style = {transform: `rotate(${deg*index}deg) translateY(-140vh)`}
+                    let style = {transform: `rotate(${deg*index}deg) translateY(-100vh)`}
                     let imgSrc = `${path}/img/${name}.mp4`;
                     return (
                         <article key={index} style={style}>
@@ -19,7 +19,7 @@ function Panels(){
                                 <div className="pic">
                                     <video src={imgSrc} autoPlay loop muted></video>
                                 </div>
-                                <h2>{name}</h2>
+                                <h2>{name}.</h2>
                             </div>
                         </article>
                     )
