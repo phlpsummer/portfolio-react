@@ -49,6 +49,9 @@
         background: #e841dc;
         padding: 3px 5px;
         box-shadow: 6px 4px 0px rgba($color: #cb90ed, $alpha: 1.0);
+        transition: 0.5s;
+        
+        &:hover { color: #fff;}
     }
     .btnNext {
         display: inline-block;
@@ -59,5 +62,8 @@
         background: #e841dc;
         padding: 3px 5px;
         box-shadow: 6px 4px 0px rgba($color: #cb90ed, $alpha: 1.0);
+        transition: 0.5s;
+
+        &:hover { color: #fff;}
     }
 }

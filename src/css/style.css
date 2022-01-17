@@ -23,10 +23,23 @@ header {
   align-items: center;
   padding: 0px 4vw;
   z-index: 5; }
-  header h1 {
-    font: 26px/1 'Abril Fatface';
-    color: #f05037;
-    letter-spacing: 1px; }
+  header h1 .logo {
+    width: 90px;
+    height: 45px;
+    position: relative; }
+    header h1 .logo span {
+      display: block;
+      font: 25px/1 'Abril Fatface';
+      color: #f05037;
+      letter-spacing: 1px; }
+      header h1 .logo span:nth-of-type(1) {
+        position: absolute;
+        right: 0px;
+        top: 0px; }
+      header h1 .logo span:nth-of-type(2) {
+        position: absolute;
+        left: 0px;
+        bottom: 0px; }
   header #gnb {
     display: flex; }
     header #gnb li {
@@ -123,7 +136,10 @@ footer {
     cursor: pointer;
     background: #e841dc;
     padding: 3px 5px;
-    box-shadow: 6px 4px 0px #cb90ed; }
+    box-shadow: 6px 4px 0px #cb90ed;
+    transition: 0.5s; }
+    #visual .btnPrev:hover {
+      color: #fff; }
   #visual .btnNext {
     display: inline-block;
     font: 700 18px/1 'Catamaran';
@@ -136,7 +152,10 @@ footer {
     cursor: pointer;
     background: #e841dc;
     padding: 3px 5px;
-    box-shadow: 6px 4px 0px #cb90ed; }
+    box-shadow: 6px 4px 0px #cb90ed;
+    transition: 0.5s; }
+    #visual .btnNext:hover {
+      color: #fff; }
 
 .content {
   min-height: 100vh; }

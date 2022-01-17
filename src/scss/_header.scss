@@ -9,8 +9,24 @@ header {
     z-index: 5;
     
     h1 {
-        font: 26px/1 'Abril Fatface'; color: #f05037;
-        letter-spacing: 1px;
+        .logo {
+            width: 90px; height: 45px;
+            position: relative;
+            span {
+                display: block;
+                font: 25px/1 'Abril Fatface'; color: #f05037;
+                letter-spacing: 1px;
+
+                &:nth-of-type(1) {
+                    position: absolute;
+                    right: 0px; top: 0px;
+                }
+                &:nth-of-type(2) {
+                    position: absolute;
+                    left: 0px; bottom: 0px;
+                }
+            }
+        }
     }
 
     #gnb {
