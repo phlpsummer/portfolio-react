@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const playlist = "PL-4RqvSks9qWoKHa8ojDRl_egHrJqsMME";
+const playlist = "PL-4RqvSks9qXygQMdDScrRM2LdENMgDIP";
 const key = `AIzaSyAMoGKvrd6wFxpLb2M8fXI83hwwuZjv7is`;
 const count = 7;
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?key=${key}&part=snippet&playlistId=${playlist}&maxResults=${count}`;
