@@ -10,21 +10,21 @@ function About(){
                 <section className="intro">
                     <h3>Saturday 이야기</h3>
                     <div className="left">
-                        <h4>WE CREATE<br/>ALL CONNECTIONS<br/>OF ALL STAGE.</h4>
-                        <p>우리는 풍부한 경험, 고객중심의 최적화된 무대로<br/>차별화된 가능성을 제시합니다.</p>
+                        <h4>WE CREATE<br/>VALUES<br/>OF ALL TOUR.</h4>
+                        <p>행복한 여행, 뜻깊은 여행 그리고 훌륭한 여행!<br/>우리 삶에서 중요한 여행의 새로운 가치를 알리겠습니다.</p>
                     </div>
                     <div className="right">
                         <div className="wrap">
-                            <h4>ESSENCE</h4>
-                            <p>우리는 지속적인 성장가능성과 끊임없는 노력으로<br/>최고의 크리에이티브를 제공합니다.</p>
+                            <h4>TRUST</h4>
+                            <p>고객의, 고객에 의한, 고객을 위한 시스템 정착을 통해 고객 중심의 신뢰 경영을 실현합니다.</p>
                         </div>
                         <div className="wrap">
-                            <h4>VISION</h4>
-                            <p>그리고 그 과정에서 각각 다른 개성을 존중하는 세계를 만들어 내고자 합니다. 콘텐츠 프로모션부터 기획까지 버티컬 미디어 기업으로 도약하고자 합니다.</p>
+                            <h4>JOYFUL</h4>
+                            <p>일상에서 가장 반짝이는 순간으로 기억될 수 있도록 Saturday가 함께합니다.</p>
                         </div>
                         <div className="wrap">
-                            <h4>GOAL</h4>
-                            <p>앞으로도 제작사에게는 작품의 퀄리티가 향상될 수 있는 최적의 제작 환경을, 관객 여러분께는 감동 가득한 공연과 쾌적한 관람 환경을 제공할 것을 약속드립니다.</p>
+                            <h4>INNOVATION</h4>
+                            <p>모두가 같은 곳에서 똑같은 경험만을 할 수 없기에, 다양한 여행상품 개발로 여행 문화를 선도합니다.</p>
                         </div>
                     </div>
                 </section>
