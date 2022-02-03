@@ -1,5 +1,5 @@
-import Boards from './Boards.js';
-import Btn from './Btn.js';
+import Panels from './Panels.js';
+import Btns from './Btns.js';
 import { useRef } from 'react';
 
 function Main(){
@@ -7,15 +7,15 @@ function Main(){
     return (
         <figure id="visual">
             <section ref={frame}>
-                <Boards />
+                <Panels />
             </section>
 
-            {/* <div className="deco">
+            <div className="deco">
                 <p>I wanna go to</p>
                 <span>(favorite: )</span>
-            </div> */}
+            </div>
 
-            <Btn frame={frame} />
+            <Btns frame={frame} />
         </figure>
     )
 }
