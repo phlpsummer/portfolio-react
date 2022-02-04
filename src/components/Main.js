@@ -10,10 +10,14 @@ function Main(){
                 <Boards />
             </section>
 
-            {/* <div className="deco">
-                <p>I wanna go to</p>
-                <span>(favorite: )</span>
-            </div> */}
+            <div className="deco_left">
+                <p>Explore</p>
+                <span>we can go anywhere.</span>
+            </div>
+            
+            <div className="deco_right">
+                <p>kr</p>
+            </div>
 
             <Btn frame={frame} />
         </figure>

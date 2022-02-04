@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@300;400;500;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +75,7 @@ footer {
 #visual {
   width: 100%;
   height: 100vh;
-  background: #f2edd7;
+  background: #e2d0c9;
   position: relative;
   overflow: hidden; }
   #visual section {
@@ -110,7 +110,7 @@ footer {
           width: 100%;
           height: 100%;
           transform: translate(1%, 8%);
-          box-shadow: 5px 5px 20px rgba(242, 237, 215, 0.2); }
+          box-shadow: 5px 5px 20px rgba(226, 208, 201, 0.2); }
           #visual section article .panel .vidShadow video {
             width: 95%;
             height: 95%;
@@ -121,26 +121,34 @@ footer {
             filter: blur(20px) brightness(1.4);
             opacity: 0.5; }
         #visual section article .panel .inner {
+          width: 93%;
+          height: 100%;
           position: absolute;
           left: 7%;
-          top: 30%;
+          top: 0;
           z-index: 3; }
-          #visual section article .panel .inner span {
-            display: block;
-            font: 700 38px/1 'Catamaran';
-            color: #fff;
-            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-            margin-bottom: 30px; }
-          #visual section article .panel .inner h2 {
-            font: 700 112px/1 'Catamaran';
-            color: #fff;
-            letter-spacing: 1px;
-            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-            margin-bottom: 90px; }
+          #visual section article .panel .inner .txt {
+            position: absolute;
+            left: 0;
+            top: 32%; }
+            #visual section article .panel .inner .txt h2 {
+              font: 700 130px/1 'Catamaran';
+              color: #fff;
+              letter-spacing: 1px;
+              text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+              margin-bottom: 10px; }
+            #visual section article .panel .inner .txt span {
+              display: block;
+              font: 700 30px/1 'Catamaran';
+              color: #fff;
+              text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); }
           #visual section article .panel .inner .view {
             display: flex;
             align-items: center;
-            cursor: pointer; }
+            cursor: pointer;
+            position: absolute;
+            left: 0;
+            bottom: 15%; }
             #visual section article .panel .inner .view .plusBtn {
               text-indent: -999px;
               width: 48px;
@@ -177,19 +185,69 @@ footer {
               text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); }
             #visual section article .panel .inner .view:hover .plusBtn {
               transform: rotate(180deg); }
+  #visual .deco_left {
+    width: calc(70vh*0.8);
+    position: absolute;
+    top: 22vh;
+    left: 7vw;
+    display: flex;
+    justify-content: space-between;
+    transform: rotate(90deg);
+    transform-origin: left center; }
+    #visual .deco_left p {
+      font: 800 22px/1 'Catamaran';
+      color: #333; }
+    #visual .deco_left span {
+      font: 800 18px/1 'Catamaran';
+      color: #333;
+      opacity: 0.3; }
+  #visual .deco_right {
+    position: absolute;
+    top: 21vh;
+    right: 6vw;
+    transform: rotate(90deg);
+    transform-origin: left center; }
+    #visual .deco_right p {
+      display: inline-block;
+      width: 30px;
+      position: relative;
+      font: 700 22px/1 'Catamaran';
+      color: #333; }
+      #visual .deco_right p::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        transform: translateY(-50%);
+        background: #333; }
   #visual .btns {
     position: absolute;
     bottom: 17.5vh;
     right: 7.5vw;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding: 6px 0px; }
+    #visual .btns::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #bdee1b;
+      position: absolute;
+      top: 0;
+      left: -5px;
+      opacity: 0.7; }
     #visual .btns .btnUp {
       font-size: 16px;
       color: #333;
       cursor: pointer;
       margin-bottom: 7px;
-      transition: 0.5s; }
+      transition: 0.5s;
+      z-index: 5; }
       #visual .btns .btnUp:hover {
         color: #aaa; }
     #visual .btns span {
@@ -198,12 +256,15 @@ footer {
       height: 4px;
       border-radius: 50%;
       background: #333;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      opacity: 0.6;
+      z-index: 5; }
     #visual .btns .btnDown {
       font-size: 16px;
       color: #333;
       cursor: pointer;
-      transition: 0.5s; }
+      transition: 0.5s;
+      z-index: 5; }
       #visual .btns .btnDown:hover {
         color: #aaa; }
 
@@ -213,7 +274,7 @@ footer {
     width: 100%;
     height: 350px;
     position: relative;
-    background-color: #ffcdd2; }
+    background-color: #e2d0c9; }
     .content .titBanner h2 {
       font: 700 60px/1 'Catamaran';
       color: #151515;
@@ -240,7 +301,7 @@ footer {
       left: 0;
       width: 100%;
       height: 100%;
-      background: #ffcdd2;
+      background: #e2d0c9;
       opacity: 0.5; }
   .content .inner {
     width: 1180px;

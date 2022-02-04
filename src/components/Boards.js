@@ -19,8 +19,10 @@ function Boards(){
                                 <video src={vidSrc} className="vidShadow" autoPlay loop muted></video>
                             </div>
                             <div className="inner">
-                                <span>I wish I was in . .</span>
-                                <h2>{country}.</h2>
+                                <div className="txt">
+                                    <h2>{country}</h2>
+                                    <span>. . not so far away.</span>
+                                </div>
                                 <div className="view">
                                     <div className="plusBtn">+</div>
                                     <p>view more</p>
