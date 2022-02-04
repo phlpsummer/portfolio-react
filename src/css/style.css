@@ -123,10 +123,16 @@ footer {
         #visual section article .panel .inner {
           position: absolute;
           left: 7%;
-          top: 38%;
+          top: 30%;
           z-index: 3; }
+          #visual section article .panel .inner span {
+            display: block;
+            font: 700 38px/1 'Catamaran';
+            color: #fff;
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px; }
           #visual section article .panel .inner h2 {
-            font: 700 110px/1 'Catamaran';
+            font: 700 112px/1 'Catamaran';
             color: #fff;
             letter-spacing: 1px;
             text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
@@ -171,38 +177,35 @@ footer {
               text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); }
             #visual section article .panel .inner .view:hover .plusBtn {
               transform: rotate(180deg); }
-  #visual .btnUp {
-    display: inline-block;
-    font: 700 24px/1 'Catamaran';
-    color: #d6d064;
-    letter-spacing: 1px;
+  #visual .btns {
     position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translateY(-50%) rotate(90deg);
-    cursor: pointer;
-    background: #e841dc;
-    padding: 3px 5px;
-    box-shadow: 6px 4px 0px #cb90ed;
-    transition: 0.5s; }
-    #visual .btnUp:hover {
-      color: #fff; }
-  #visual .btnDown {
-    display: inline-block;
-    font: 700 24px/1 'Catamaran';
-    color: #d6d064;
-    letter-spacing: 1px;
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    transform: translateY(-50%) rotate(90deg);
-    cursor: pointer;
-    background: #e841dc;
-    padding: 3px 5px;
-    box-shadow: 6px 4px 0px #cb90ed;
-    transition: 0.5s; }
-    #visual .btnDown:hover {
-      color: #fff; }
+    bottom: 17.5vh;
+    right: 7.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #visual .btns .btnUp {
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+      margin-bottom: 7px;
+      transition: 0.5s; }
+      #visual .btns .btnUp:hover {
+        color: #aaa; }
+    #visual .btns span {
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #333;
+      margin-bottom: 5px; }
+    #visual .btns .btnDown {
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+      transition: 0.5s; }
+      #visual .btns .btnDown:hover {
+        color: #aaa; }
 
 .content {
   min-height: 100vh; }
