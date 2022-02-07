@@ -189,7 +189,7 @@ footer {
     width: calc(70vh*0.8);
     position: absolute;
     top: 22vh;
-    left: 7vw;
+    left: 7.5vw;
     display: flex;
     justify-content: space-between;
     transform: rotate(90deg);
@@ -204,7 +204,7 @@ footer {
   #visual .deco_right {
     position: absolute;
     top: 21vh;
-    right: 6vw;
+    right: 6.5vw;
     transform: rotate(90deg);
     transform-origin: left center; }
     #visual .deco_right p {
@@ -249,7 +249,10 @@ footer {
       transition: 0.5s;
       z-index: 5; }
       #visual .btns .btnUp:hover {
-        color: #aaa; }
+        transform: translateY(-5px); }
+      #visual .btns .btnUp.first {
+        color: #666;
+        opacity: .5; }
     #visual .btns span {
       display: block;
       width: 4px;
@@ -266,7 +269,10 @@ footer {
       transition: 0.5s;
       z-index: 5; }
       #visual .btns .btnDown:hover {
-        color: #aaa; }
+        transform: translateY(5px); }
+      #visual .btns .btnDown.last {
+        color: #666;
+        opacity: .5; }
 
 .content {
   min-height: 100vh; }

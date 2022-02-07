@@ -112,7 +112,7 @@
     .deco_left {
         width: calc(70vh*0.8);
         position: absolute;
-        top: 22vh; left: 7vw;
+        top: 22vh; left: 7.5vw;
         display: flex;
         justify-content: space-between;
         transform: rotate(90deg);
@@ -129,7 +129,7 @@
     }
     .deco_right {
         position: absolute;
-        top: 21vh; right: 6vw;
+        top: 21vh; right: 6.5vw;
         transform: rotate(90deg);
         transform-origin: left center;
 
@@ -174,7 +174,8 @@
             transition: 0.5s;
             z-index: 5;
 
-            &:hover { color: #aaa;}
+            &:hover { transform: translateY(-5px);}
+            &.first { color: #666; opacity: .5;}
         }
         span {
             display: block;
@@ -192,7 +193,8 @@
             transition: 0.5s;
             z-index: 5;
 
-            &:hover { color: #aaa;}
+            &:hover { transform: translateY(5px);}
+            &.last { color: #666; opacity: .5;}
         }
     }
 }
