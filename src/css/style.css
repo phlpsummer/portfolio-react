@@ -275,14 +275,56 @@ footer {
         opacity: .5; }
 
 section.market {
-  display: none;
   width: 100%;
-  min-height: 500px;
   background: #fff; }
   section.market .inner {
     width: 1180px;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    padding: 200px; }
+    section.market .inner .title {
+      font: 700 28px/1 'Catamaran';
+      color: #222;
+      margin-bottom: 50px;
+      text-align: center; }
+    section.market .inner .productSlide {
+      width: 100%;
+      display: flex; }
+      section.market .inner .productSlide article {
+        width: calc((100% - 30px) / 3);
+        margin-right: 10px; }
+        section.market .inner .productSlide article .productPhoto {
+          width: 100%;
+          height: 360px;
+          overflow: hidden;
+          margin-bottom: 10px;
+          cursor: pointer; }
+          section.market .inner .productSlide article .productPhoto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s ease-in-out; }
+          section.market .inner .productSlide article .productPhoto:hover img {
+            transform: scale(1.1);
+            filter: contrast(1.1) saturate(1.1); }
+        section.market .inner .productSlide article .con {
+          width: 100%;
+          padding: 0 5px; }
+          section.market .inner .productSlide article .con p {
+            font: 400 15px/1.5 'Noto Sans KR';
+            color: #444;
+            margin-bottom: 12px; }
+          section.market .inner .productSlide article .con .price .tag {
+            display: inline-block;
+            font: 700 16px/1 'Noto Sans KR';
+            color: #e841dc;
+            margin-right: 6px; }
+          section.market .inner .productSlide article .con .price span {
+            display: inline-block;
+            font: 700 16px/1 'Noto Sans KR';
+            color: #111; }
+        section.market .inner .productSlide article:last-of-type {
+          margin-right: 0; }
 
 .content {
   min-height: 100vh; }
