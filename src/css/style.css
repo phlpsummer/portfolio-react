@@ -281,7 +281,7 @@ section.market {
     width: 1180px;
     margin: 0 auto;
     position: relative;
-    padding: 200px; }
+    padding: 150px; }
     section.market .inner .title {
       font: 700 28px/1 'Catamaran';
       color: #222;
@@ -292,27 +292,37 @@ section.market {
       display: flex; }
       section.market .inner .productSlide article {
         width: calc((100% - 30px) / 3);
-        margin-right: 10px; }
+        margin-right: 10px;
+        cursor: pointer; }
         section.market .inner .productSlide article .productPhoto {
           width: 100%;
           height: 360px;
           overflow: hidden;
           margin-bottom: 10px;
-          cursor: pointer; }
+          transition: 0.5s ease-in-out;
+          position: relative; }
           section.market .inner .productSlide article .productPhoto img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: 0.5s ease-in-out; }
-          section.market .inner .productSlide article .productPhoto:hover img {
-            transform: scale(1.1);
-            filter: contrast(1.1) saturate(1.1); }
+          section.market .inner .productSlide article .productPhoto::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #111;
+            opacity: 0.1; }
         section.market .inner .productSlide article .con {
           width: 100%;
           padding: 0 5px; }
           section.market .inner .productSlide article .con p {
             font: 400 15px/1.5 'Noto Sans KR';
             color: #444;
+            letter-spacing: -1px;
             margin-bottom: 12px; }
           section.market .inner .productSlide article .con .price .tag {
             display: inline-block;
@@ -325,6 +335,28 @@ section.market {
             color: #111; }
         section.market .inner .productSlide article:last-of-type {
           margin-right: 0; }
+        section.market .inner .productSlide article:hover .productPhoto {
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); }
+          section.market .inner .productSlide article:hover .productPhoto img {
+            transform: scale(1.1);
+            filter: contrast(1.1) saturate(1.1) brightness(1.1); }
+
+section.banner {
+  width: 100%;
+  height: 360px;
+  padding: 150px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+  section.banner h2 {
+    font: 700 28px/1 'Noto Sans KR';
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px; }
+  section.banner p {
+    font: 400 18px/1 'Noto Sans KR';
+    color: #fff;
+    text-align: center; }
 
 .content {
   min-height: 100vh; }

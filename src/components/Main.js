@@ -28,7 +28,7 @@ function Main(){
                     <div className="productSlide">
                         <article>
                             <div className="productPhoto">
-                                <img src={process.env.PUBLIC_URL + '/img/sub_board.jpg'} />
+                                <img src={process.env.PUBLIC_URL + '/img/product_canyon.jpg'} />
                             </div>
                             <div className="con">
                                 <p>#미서부 완전일주 #4대캐년 #8/9/10일</p>
@@ -39,7 +39,7 @@ function Main(){
                         </article>
                         <article>
                             <div className="productPhoto">
-                                <img src={process.env.PUBLIC_URL + '/img/sub_board.jpg'} />
+                                <img src={process.env.PUBLIC_URL + '/img/product_saipan.jpg'} />
                             </div>
                             <div className="con">
                                 <p>#사이판 아쿠아리조트 디럭스가든뷰 #4/5일 #오전출발</p>
@@ -50,18 +50,18 @@ function Main(){
                         </article>
                         <article>
                             <div className="productPhoto">
-                                <img src={process.env.PUBLIC_URL + '/img/sub_board.jpg'} />
+                                <img src={process.env.PUBLIC_URL + '/img/product_dubai.jpg'} />
                             </div>
                             <div className="con">
-                                <p>#미서부 완전일주 #4대캐년 #8/9/10일</p>
+                                <p>#두바이 시티투어 #전일정 5성 특급호텔</p>
                                 <div className="price">
-                                    <div className='tag'>28%</div><span>849,800원~</span>
+                                    <div className='tag'>19%</div><span>899,800원~</span>
                                 </div>
                             </div>
                         </article>
                         <article>
                             <div className="productPhoto">
-                                <img src={process.env.PUBLIC_URL + '/img/sub_board.jpg'} />
+                                <img src={process.env.PUBLIC_URL + '/img/product_sydney.jpg'} />
                             </div>
                             <div className="con">
                                 <p>#시드니 완전일주 #자유여행으로 내맘대로</p>
@@ -73,10 +73,9 @@ function Main(){
                     </div>
                 </div>
             </section>
-            <section className='banner'>
-                <div className="inner">
-                    <p>여행, 예술이 되다.</p>
-                </div>
+            <section className='banner' style={{backgroundImage: 'url('+process.env.PUBLIC_URL+'/img/main_banner.jpg)'}}>
+                <h2>여행에 품격을 더하다.</h2>
+                <p>여행, 예술이 되는 하나의 작품. Saturday.</p>
             </section>
             <section className='timedeal'>
                 <div className="inner">
