@@ -252,25 +252,34 @@ section.market {
                     p {
                         font: 400 15px/1.5 'Noto Sans KR'; color: #444; letter-spacing: -1px;
                         margin-bottom: 12px;
+                        transition: 0.5s ease-in-out;
                     }
                     .price {
                         .tag {
                             display: inline-block;
                             font: 700 16px/1 'Noto Sans KR'; color: #e841dc;
                             margin-right: 6px;
+                            transition: 0.5s ease-in-out;
                         }
                         span {
                             display: inline-block;
                             font: 700 16px/1 'Noto Sans KR'; color: #111;
+                            transition: 0.5s ease-in-out;
                         }
                     }
                 }
 
                 &:last-of-type { margin-right: 0;}
-                &:hover { .productPhoto {
-                    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-                    img { transform: scale(1.1); filter: contrast(1.1) saturate(1.1) brightness(1.1);}
-                }}
+                &:hover {
+                    .productPhoto {
+                        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+                        img { transform: scale(1.1); filter: contrast(1.1) saturate(1.1) brightness(1.1);}
+                    }
+                    .con {
+                        p { text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);}
+                        .price { .tag { text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);} span {text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);}}
+                    }
+                }
             }
         }
     }

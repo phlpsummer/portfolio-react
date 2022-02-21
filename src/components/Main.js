@@ -79,7 +79,7 @@ function Main(){
             </section>
             <section className='timedeal'>
                 <div className="inner">
-                    
+                    <h2 className='title'>Ideas for your next trip?</h2>
                 </div>
             </section>
         </>
