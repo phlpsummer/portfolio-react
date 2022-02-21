@@ -207,7 +207,7 @@ section.market {
         width: 1180px;
         margin: 0 auto;
         position: relative;
-        padding: 150px;
+        padding: 150px 0;
 
         .title {
             font: 700 28px/1 'Catamaran'; color: #222;
@@ -299,5 +299,23 @@ section.banner {
     p {
         font: 400 18px/1 'Noto Sans KR'; color: #fff;
         text-align: center;
+    }
+}
+section.timedeal {
+    width: 100%;
+    background: #fff;
+    display: none;
+
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        position: relative;
+        padding: 150px 0;
+
+        .title {
+            font: 700 28px/1 'Catamaran'; color: #222;
+            margin-bottom: 50px;
+            text-align: center;
+        }
     }
 }
