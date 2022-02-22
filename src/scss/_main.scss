@@ -331,14 +331,15 @@ section.timedeal {
             }
             .con {
                 width: 50%; height: 100%;
-                padding: 20px 30px;
-                h3 {
+                padding: 40px 30px 0px;
+
+                #demo {
                     font: 700 20px/1 'Noto Sans KR'; color: #111;
-                    margin-bottom: 20px;
+                    margin-bottom: 24px;
                 }
                 p {
-                    font: 300 22px/1.5 'Noto Sans KR'; color: #444;
-                    margin-bottom: 40px;
+                    font: 300 22px/1.6 'Noto Sans KR'; color: #444;
+                    margin-bottom: 48px;
                 }
                 .price {
                     .tag {
