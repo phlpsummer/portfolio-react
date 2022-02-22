@@ -79,7 +79,21 @@ function Main(){
             </section>
             <section className='timedeal'>
                 <div className="inner">
-                    <h2 className='title'>Ideas for your next trip?</h2>
+                    <h2 className='title'>Don't miss this time.</h2>
+                    <div className="tdContent">
+                        <div className="tdProduct">
+                            <video src={process.env.PUBLIC_URL + '/img/timedeal_product.mp4'} muted></video>
+                        </div>
+                        <div className="con">
+                            <h3>타임딜</h3>
+
+                            <p>#터키 일주 #9/10일 #전일정특급호텔+VIP버스<br/>#동서양의조화</p>
+                            <div className="price">
+                                    <div className="tag">타임딜가</div><span>899,000원~</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </>
