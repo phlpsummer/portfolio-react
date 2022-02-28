@@ -272,12 +272,12 @@ section.market {
                 &:last-of-type { margin-right: 0;}
                 &:hover {
                     .productPhoto {
-                        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+                        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
                         img { transform: scale(1.1); filter: contrast(1.1) saturate(1.1) brightness(1.1);}
                     }
                     .con {
-                        p { text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);}
-                        .price { .tag { text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);} span {text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);}}
+                        p { text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.08);}
+                        .price { .tag { text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.08);} span {text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.08);}}
                     }
                 }
             }
@@ -328,15 +328,16 @@ section.timedeal {
                 video {
                     width: 100%; height: 100%;
                     object-fit: cover;
+                    transition: 0.5s;
                 }
             }
             .con {
                 width: 50%; height: 100%;
-                padding: 35px 30px 0px;
+                padding: 35px 35px 0px;
 
                 #demo {
                     display: inline-block;
-                    font: 700 18px/1 'Noto Sans KR'; color: #111; letter-spacing: 1px;
+                    font: 700 18px/1 'Noto Sans KR'; color: #111;
                     margin-bottom: 35px;
                     position:relative;
 
@@ -344,7 +345,7 @@ section.timedeal {
                         content: ''; display: block;
                         width: 105%; height: 10px;
                         position: absolute;
-                        bottom: -4px; left: 0px;
+                        bottom: -5px; left: 0px;
                         background-color: #bdee1b;
                         opacity: 0.4;
                     }
@@ -365,6 +366,13 @@ section.timedeal {
                         font: 700 20px/1 'Noto Sans KR'; color: #111;
                         transition: 0.5s ease-in-out;
                     }
+                }
+            }
+
+            &:hover {
+                video {
+                    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+                    filter: saturate(1.2) brightness(1.1);
                 }
             }
         }
