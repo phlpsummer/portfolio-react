@@ -23,7 +23,7 @@ function Main(){
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = "타임딜 " + hours + "시간 "
+    document.getElementById("demo").innerHTML = "남은 딜 " + hours + "시간 "
     + minutes + "분 " + seconds + "초";
 
     // If the count down is finished, write some text
