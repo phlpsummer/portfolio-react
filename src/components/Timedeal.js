@@ -1,7 +1,7 @@
 function Timedeal(){
 
     // Set the date we're counting down to
-    var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+    var countDownDate = new Date("Jan 5, 2024 23:37:25").getTime();
     // Update the count down every 1 second
     var x = setInterval(function() {
         // Get today's date and time
@@ -13,7 +13,7 @@ function Timedeal(){
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         // Display the result in the element with id="demo"
-        document.getElementById("demo").innerHTML = "남은 딜 " + hours + "시간 " + minutes + "분 " + seconds + "초";
+        document.getElementById("demo").innerHTML = "딜 종료까지 " + hours + "시간 " + minutes + "분 " + seconds + "초.";
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
